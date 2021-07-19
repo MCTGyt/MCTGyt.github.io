@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/07/19/JgBk9jy5RtE1cUD.png">
+    <meta name="description" content="Here is a MCTGyt">
+    <!--乱七八糟-->
+    <script src="//unpkg.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <div id="root">
+        <div id="menu">
+            <div class="navbar">
+            <div style="position:absolute;left:0px;top:0px">
+            <details>
+                <summary><h2>About</h2></summary>
+                <div style="background-color:#FF3333;">
+                <p>About me.</p><br>
+                I'm a P.5 student in HongKong. I like coding with python & html and I join coding website at yearago.<br>
+                                                                                                                    <br>
+                <p>Donate.</p>
+                Donate with PayPal:<a href="https://paypal.me/mctgyt">https://paypal.me/mctgyt</a><br>
+                Other donate link： {{ donate }} <br>
+                                                <br> 
+                <p>Questions And Answers.</p>
+                1.Why your name was MCTGyt<br>
+                  I'll not tell you.😂<br>
+                                      <br>
+                2.Why you used github to host your website?<br>
+                  Because I just a student and I can not pay the server(vps) fees.<br>
+                                            <br>
+                3.Why your website was ugly?<br>
+                  Because I don't kown how to use css and vuejs<br>
+                </p>
+                </div>
+                </div>
+                </div>
+            </details>
+            <div style="position:absolute;left:47.5%;top:0px">
+            <details>
+                <summary><h2>Media</h2></summary>
+                <div style="background-color:#FF3333;">
+                <p>Info</p>
+                1.Email:mctgyt@aol.com<br>
+                2.discord:MCTGyt123#2121<br>
+                3.Youtube:<br>
+                  I'll not tell you.<br>
+                </div>
+            </details>
+
+        </div>
+        </div>
+            <div style="position:absolute;left:95%;top:0px">
+            
+            <details>
+                <summary><h2>Test</h2></summary>
+                <div style="background-color: #FF3333;">
+                <p>Test</p>
+                光復香港時代革命 Liberate Hong Kong, the revolution of our times.<br>
+                五大訴求，缺一不可 Five demands, not one less.<br>
+                </div>
+            </details>
+            </div>
+
+
+        <center>
+        <div id="title" style="color:#666666;">
+        <h2>Here is {{ name }}</h2>
+        <p>{{ about }}</p>
+        <p>↖↖↖↖↖↖↖↖↖↖</p>
+        <p>Donate link: {{ donate }}</p>
+        </center>
+        <div id="down" style="background-color:#0088A8 ;">
+            <a href="javascript:history.go(-1);"><p class="menu_down"></p></svg></a>
+        </div>
+        </div>
+        </div>
+            </div>
+    <style>
+        body{
+            font-family: 'Ubuntu', sans-serif;
+            background-color:#444444;
+            background-size: 125%;
+            background-image:url("https://shelter-zone.github.io/SHELTER-ZONE/img/after.1669e577.gif")
+        }
+        #test{
+            font-family: 'Zhi Mang Xing', cursive;
+        }
+        h1,h2,h3,h4,h5,h6,p{
+            color:#DDDDDD
+        }
+        #title div{
+            font-weight:bold;
+            
+        }
+        #down{
+            padding: 10px 0;
+            position:absolute;
+            bottom:0px;
+            margin:0px
+        }
+        .menu_down{
+            color:#000000;
+            font-family: 'ttf12'
+            
+        }
+    </style>
+
+<script>
+    new Vue({
+      el: "#root",
+      data: {
+        name: "MCTGyt!",
+        about: "我系一個香港嘅小學生",
+        donate: "https://paypal.me/mctgyt"
+      }
+    })
+    </script>
+</body>
+</html>
