@@ -102,6 +102,12 @@
             <a href="http://s05.flagcounter.com/more/p2a"><img src="https://bit.ly/3iIkWtZ" alt="Flag Counter" border="0"></a>
         </div>
         <!--background-image:url("https://shelter-zone.github.io/SHELTER-ZONE/img/after.1669e577.gif")-->
+    <div id="cc">
+        <div style="position:absolute;top:100%;color:#444444">
+            <a rel="license" href="http://creativecommons.org/lice></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>Creative Commons Attribution-ShareAlike 4.0 International License.
+        </div>
+    </div>
+    
     <style>
         body{
             font-family: 'Ubuntu', sans-serif;
@@ -162,6 +168,9 @@ t.style.visibility = 'none'	// 显示元素
 <script>
 $(document).ready(function(){
   $(dev_mode).hide();
+  if(location.toString().indexOf("mctgyt.netlify.app") <= -1){ 
+    alert("Use https://mctgyt.netlify.app")
+} 
   $("button").click(function(){
     $(dev_mode).toggle()
   })
