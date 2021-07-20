@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
 </head>
-<body>
+<body onload="dev_onload()">
     <div id="root">
         <div id="menu">
             <div class="navbar">
@@ -31,7 +32,7 @@
                 <summary><h2>About</h2></summary>
                 <div style="background-color:#FF3333;">
                 <p>About me.</p><br>
-                I'm a P.5 student in HongKong. I like coding with python & html and I join coding website at yearago.<br>
+                I'm a P.5 student in HongKong. I like coding with python & html and I join coding website at 1 yearago.<br>
                                                                                                                     <br>
                 <p>Donate.</p>
                 Donate with PayPal:<a href="https://paypal.me/mctgyt">https://paypal.me/mctgyt</a><br>
@@ -72,6 +73,7 @@
                 <summary><h2>Test</h2></summary>
                 <div style="background-color: #FF3333;">
                 <p>Test</p>
+                <button id="dev_button">Dev setting.</button><br>
                 光復香港時代革命 Liberate Hong Kong, the revolution of our times.<br>
                 五大訴求，缺一不可 Five demands, not one less.<br>
                 </div>
@@ -82,10 +84,12 @@
         </div>
         <center>
         <div id="title" style="color:#666666;">
+            <div id="title_body">
         <h2>Here is {{ name }}</h2>
         <p>{{ about }}</p>
         <p>↖↖↖↖↖↖↖↖↖↖</p>
         <p>Donate link: {{ donate }}</p>
+    </div>
         </center>
         <div id="down" style="background-color:#0088A8 ;">
             <a href="javascript:history.go(-1);"><p class="menu_down"></p></svg></a>
@@ -93,12 +97,16 @@
         </div>
         </div>
             </div>
+        
+        <div id="dev_mode" style="position:absolute;bottom:0px;margin:0px;">
+            <a href="http://s05.flagcounter.com/more/p2a"><img src="https://bit.ly/3iIkWtZ" alt="Flag Counter" border="0"></a>
+        </div>
+        <!--background-image:url("https://shelter-zone.github.io/SHELTER-ZONE/img/after.1669e577.gif")-->
     <style>
         body{
             font-family: 'Ubuntu', sans-serif;
             background-color:#444444;
             background-size: 125%;
-            background-image:url("https://shelter-zone.github.io/SHELTER-ZONE/img/after.1669e577.gif")
         }
         #test{
             font-family: 'Zhi Mang Xing', cursive;
@@ -137,5 +145,37 @@
       }
     })
     </script>
+
+<!--<script>
+
+function dev_onload(){
+    document.getElementById("dev_mode");
+    alert("页面加载完成");
+    t.style.visibility = 'hidden'	// 隐藏元素
+    
+}
+var dev_button = document.getElementById("dev_mode");
+t.style.visibility = 'none'	// 显示元素
+
+</script>-->
+
+<script>
+$(document).ready(function(){
+  $(dev_mode).hide();
+  $("button").click(function(){
+    $(dev_mode).toggle()
+  })
+})
+    </script>
+
+<!--<script>
+$(document).ready(function(){
+  $(dev_mode).hide();
+  $("button").click(function(){
+    $(dev_mode).show();
+    alert("Dev mode on.")
+  })
+})
+</script>-->
 </body>
 </html>
