@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/07/19/JgBk9jy5RtE1cUD.png">
     <meta name="description" content="Here is a MCTGyt">
-    <!--乱七八糟-->
+    <!---->
     <script src="//unpkg.com/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
@@ -97,6 +97,14 @@
         </div>
         </div>
             </div>
+
+        <div id="hong_kong_people_resist" style="margin: 35%;margin-top: 5%;background-color: #FFFFFF;text-align: center;">
+            <div id="windows_01" style="float:right">
+            <a id="close_windows_01" onclick="closewindows01(this);">[x]</a>
+            </div><br>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/YBR938J/QQ-20210903155100.png" alt="QQ-20210903155100" border="0" ></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/sVnMPGt/QQ-20210903155051.png" alt="QQ-20210903155051" border="0"></a>
+        </div>
         
         <div id="dev_mode" style="position:absolute;bottom:0px;margin:0px;">
             <a href="http://s05.flagcounter.com/more/p2a"><img src="https://bit.ly/3iIkWtZ" alt="Flag Counter" border="0"></a>
@@ -182,6 +190,14 @@ $(document).ready(function(){
   })
 })
     </script>
+<script>
+setInterval($(hong_kong_people_resist).show(),300000,);
+
+    document.onmousemove=document.onmousedown=startTimer
+    function closewindows01(button){
+        $(hong_kong_people_resist).hide();
+    }
+</script>
 
 <!--<script>
 $(document).ready(function(){
