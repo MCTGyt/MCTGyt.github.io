@@ -75,6 +75,9 @@
                 <div style="background-color: #FF3333;">
                 <p>Test</p>
                 <button id="dev_button">Dev setting.</button><br>
+                <form>
+                    <input type="checkbox"  onclick="recentsituation(this);">Recent situation
+                    </form> 
                 光復香港時代革命 Liberate Hong Kong, the revolution of our times.<br>
                 五大訴求，缺一不可 Five demands, not one less.<br>
                 </div>
@@ -173,14 +176,6 @@ t.style.visibility = 'none'	// 显示元素
 </script>-->
 
 <script>
-    /*delete it*/
-var version = 0.3;
-if (version <= 1){
-    alert("If I have time , I'll fix my website")
-}
-</script>
-
-<script>
 $(document).ready(function(){
   $(dev_mode).hide();
   if(location.toString().indexOf("mctgyt.netlify.app") <= -1){ 
@@ -192,11 +187,27 @@ $(document).ready(function(){
 })
     </script>
 <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d64575913a23331e8dc9ade61479a70b";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+<script>
 setInterval($(hong_kong_people_resist).show(),300000,);
 
     document.onmousemove=document.onmousedown=startTimer
     function closewindows01(button){
         $(hong_kong_people_resist).hide();
+    }
+</script>
+
+<script>
+    function recentsituation(){
+        
     }
 </script>
 
