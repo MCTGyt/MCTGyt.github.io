@@ -19,6 +19,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style@0.1.1/transition.min.css">
+
+    <script src="https://lab.hakim.se/zoom-js/js/zoom.js"></script>
+    <link  href="https://lab.hakim.se/zoom-js/css/main.css">
+    <link href="https://lab.hakim.se/zoom-js/css/reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
 </head>
@@ -76,7 +83,7 @@
                 <p>Test</p>
                 <button id="dev_button">Dev setting.</button><br>
                 <form>
-                    <input type="checkbox"  onclick="recentsituation(this);">Recent situation
+                    <input type="checkbox"  onclick="recentsituation(this);">Test
                     </form> 
                 光復香港時代革命 Liberate Hong Kong, the revolution of our times.<br>
                 五大訴求，缺一不可 Five demands, not one less.<br>
@@ -106,11 +113,12 @@
             <div id="windows_01" style="float:right">
             <a id="close_windows_01" onclick="closewindows01(this);">[x]</a>
             </div><br>
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/YBR938J/QQ-20210903155100.png" alt="QQ-20210903155100" border="0" ></a>
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/sVnMPGt/QQ-20210903155051.png" alt="QQ-20210903155051" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/YBR938J/QQ-20210903155100.png" alt="QQ-20210903155100" border="0"  data-action="zoom"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/sVnMPGt/QQ-20210903155051.png" alt="QQ-20210903155051" border="0" data-action="zoom"></a>
         </div>
-        
+
         <div id="dev_mode" style="position:absolute;bottom:0px;margin:0px;">
+            <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280339665'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1280339665%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
             <a href="http://s05.flagcounter.com/more/p2a"><img src="https://bit.ly/3iIkWtZ" alt="Flag Counter" border="0"></a>
         </div>
         <!--background-image:url("https://shelter-zone.github.io/SHELTER-ZONE/img/after.1669e577.gif")-->
@@ -119,7 +127,6 @@
             <a rel="license" href="http://creativecommons.org/lice></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>Creative Commons Attribution-ShareAlike 4.0 International License.
         </div>
     </div>
-    
     <style>
         body{
             font-family: 'Ubuntu', sans-serif;
@@ -151,6 +158,8 @@
             display: flex;
             justify-content:space-between
         }
+
+        .import 'transition-style'
     </style>
 
 <script>
@@ -206,9 +215,9 @@ setInterval($(hong_kong_people_resist).show(),300000,);
 </script>
 
 <script>
-    function recentsituation(){
-        
-    }
+  zoom.to({
+    element: document.querySelector( 'img' )
+  });
 </script>
 
 <!--<script>
