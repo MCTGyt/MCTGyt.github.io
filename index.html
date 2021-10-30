@@ -1,236 +1,86 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/07/19/JgBk9jy5RtE1cUD.png">
-    <meta name="description" content="Here is a MCTGyt">
-    <!---->
-    <script src="//unpkg.com/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--font-->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet"> 
-    
-    <link rel="stylesheet" href="https://unpkg.com/transition-style">
-    <link rel="stylesheet" href="https://unpkg.com/transition-style@0.1.1/transition.min.css">
-
-    <script src="https://lab.hakim.se/zoom-js/js/zoom.js"></script>
-    <link  href="https://lab.hakim.se/zoom-js/css/main.css">
-    <link href="https://lab.hakim.se/zoom-js/css/reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Hello world.</title>
 </head>
-<body onload="dev_onload()">
-	<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-614edc74bf35bceb"></script>
-
-    <div id="root">
-        <div id="menu">
-            <div class="navbar">
-                <div id="bar1">
-            <!--<div style="position:absolute;left:0px;top:0px">-->
+<body>
+    <div class="root">
+        <div id="bar1">
             <details>
-                <summary><h2>About</h2></summary>
-                <div style="background-color:#FF3333;">
-                <p>About me.</p><br>
-                I'm a P.5 student in HongKong. I like coding with python & html and I join coding website at 1 yearago.<br>
-                                                                                                                    <br>
-                <p>Donate.</p>
-                Donate with PayPal:<a href="https://paypal.me/mctgyt">https://paypal.me/mctgyt</a><br>
-                Other donate link： {{ donate }} <br>
-                                                <br> 
-                <p>Questions And Answers.</p>
-                1.Why your name was MCTGyt<br>
-                  I'll not tell you.😂<br>
-                                      <br>
-                2.Why you used github to host your website?<br>
-                  Because I just a student and I can not pay the server(vps) fees.<br>
-                                            <br>
-                3.Why your website was ugly?<br>
-                  Because I don't kown how to use css and vuejs<br>
-                </p>
-                </div>
-                </div>
-            </details>
-            <div id="bar2">
-            <!--<div style="position:absolute;left:47.5%;top:0px">-->
-            <details>
-                <summary><h2>Media</h2></summary>
-                <div style="background-color:#FF3333;">
-                <p>Info</p>
-                1.Email:mctgyt@aol.com<br>
-                2.discord:MCTGyt123#2121<br>
-                    3.Odysee:@MCTGyt
-                4.Youtube:<br>
-                  I'll not tell you.<br>
-                </div>
-            </details>
-
-
+                <summary>
+            <h2><i class="far fa-address-card"></i>About.</h2>
+        </summary>
+        <p>I'm a student in HongKong</p>
+        <p>I start coding this website in 2020/10/30 | Over <span id="sitetime"></span> days.</p>
+        </details>
         </div>
-            <div id="bar3">
-            <!--<div style="position:absolute;left:95%;top:0px">-->
-            
+        <div id="bar2">
             <details>
-                <summary><h2>Test</h2></summary>
-                <div style="background-color: #FF3333;">
-                <p>Test</p>
-                <button id="dev_button">Dev setting.</button><br>
-                <form>
-                    <input type="checkbox"  onclick="recentsituation(this);">Test
-                    </form> 
-                光復香港時代革命 Liberate Hong Kong, the revolution of our times.<br>
-                五大訴求，缺一不可 Five demands, not one less.<br>
-                </div>
-            </details>
-            </div>
-            </div>
-
+                <summary>
+            <h2><i class="fas fa-envelope-open-text"></i>Contact.</h2>
+        </summary> 
+        <p><i class="fas fa-envelope-open-text"></i>Email:<a href="mailto:mctgyt@aol.com">mctgyt@aol.com</a></p>
+        </details>
+        <div id="bar3">
+        <details>
+            <summary>
+                <h2><i class="fab fa-paypal"></i>Donate.</h2>
+            </summary>
+            <p><i class="fab fa-paypal"></i><a href="https://paypal.me/mctgyt">https://paypal.me/mctgyt</a></p>
+        </details>
         </div>
-        <center>
-        <div id="title" style="color:#666666;">
-            <div id="title_body">
-        <h2>Here is {{ name }}</h2>
-        <p>{{ about }}</p>
-        <p>↖↖↖↖↖↖↖↖↖↖</p>
-        <p>Donate link: {{ donate }}</p>
+        </div>
     </div>
+    <div id="center">
+        <center>
+            <h2>Hello World.</h2>
+            <p>Just nobody</p>
         </center>
-        <div id="down" style="background-color:#0088A8 ;">
-            <a href="javascript:history.go(-1);"><p class="menu_down"></p></svg></a>
-        </div>
-        </div>
-        </div>
-            </div>
-
-        <div id="hong_kong_people_resist" style="margin: 35%;margin-top: 5%;background-color: #FFFFFF;text-align: center;">
-            <div id="windows_01" style="float:right">
-            <a id="close_windows_01" onclick="closewindows01(this);">[x]</a>
-            </div><br>
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/YBR938J/QQ-20210903155100.png" alt="QQ-20210903155100" border="0"  data-action="zoom"></a>
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/sVnMPGt/QQ-20210903155051.png" alt="QQ-20210903155051" border="0" data-action="zoom"></a>
-        </div>
-
-        <div id="dev_mode" style="position:absolute;bottom:0px;margin:0px;">
-            <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280339665'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1280339665%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
-            <a href="http://s05.flagcounter.com/more/p2a"><img src="https://bit.ly/3iIkWtZ" alt="Flag Counter" border="0"></a>
-        </div>
-        <!--background-image:url("https://shelter-zone.github.io/SHELTER-ZONE/img/after.1669e577.gif")-->
-    <div id="cc">
-        <div style="position:absolute;top:100%;color:#444444">
-            <a rel="license" href="http://creativecommons.org/lice></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>Creative Commons Attribution-ShareAlike 4.0 International License.
-        </div>
     </div>
     <style>
-        body{
-            font-family: 'Ubuntu', sans-serif;
-            background-color:#444444;
-            background-size: 125%;
-        }
-        #test{
-            font-family: 'Zhi Mang Xing', cursive;
-        }
-        h1,h2,h3,h4,h5,h6,p{
-            color:#DDDDDD
-        }
-        #title div{
-            font-weight:bold;
-            
-        }
-        #down{
-            padding: 10px 0;
-            position:absolute;
-            bottom:0px;
-            margin:0px
-        }
-        .menu_down{
-            color:#000000;
-            font-family: 'ttf12'
-            
-        }
-        .navbar{
+        .root {
             display: flex;
-            justify-content:space-between
+            justify-content:space-between;
+            flex-direction: row
         }
-
-        .import 'transition-style'
+        body {
+            font-family: 'Ubuntu Mono', monospace;
+        }
     </style>
 
-<script>
-    new Vue({
-      el: "#root",
-      data: {
-        name: "MCTGyt!",
-        about: "我系一個香港嘅小學生",
-        donate: "https://paypal.me/mctgyt"
-      }
-    })
-    </script>
-
-<!--<script>
-function dev_onload(){
-    document.getElementById("dev_mode");
-    alert("页面加载完成");
-    t.style.visibility = 'hidden'	// 隐藏元素
-    
-}
-var dev_button = document.getElementById("dev_mode");
-t.style.visibility = 'none'	// 显示元素
-</script>-->
-
-<script>
-$(document).ready(function(){
-  $(dev_mode).hide();
-  if(location.toString().indexOf("mctgyt.netlify.app") <= -1){ 
-    alert("Use https://mctgyt.netlify.app")
-} 
-  $("button").click(function(){
-    $(dev_mode).toggle()
-  })
-})
-    </script>
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?d64575913a23331e8dc9ade61479a70b";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-
-<script>
-setInterval($(hong_kong_people_resist).show(),300000,);
-
-    document.onmousemove=document.onmousedown=startTimer
-    function closewindows01(button){
-        $(hong_kong_people_resist).hide();
+<script language=javascript>
+    function siteTime(){
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000
+    var minutes = seconds * 60
+    var hours = minutes * 60
+    var days = hours * 24
+    var years = days * 365
+    var today = new Date()
+    var todayYear = today.getFullYear()
+    var todayMonth = today.getMonth()
+    var todayDate = today.getDate()
+    var todayHour = today.getHours()
+    var todayMinute = today.getMinutes()
+    var todaySecond = today.getSeconds()
+    var t1 = Date.UTC(2021,10,30,00,00,00)
+    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
+    var diff = t2-t1
+    var diffYears = Math.floor(diff/years)
+    var diffDays = Math.floor((diff/days)-diffYears*365)
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
+    document.getElementById("sitetime").innerHTML=(diffYears*365+diffDays)
     }
-</script>
-
-<script>
-  zoom.to({
-    element: document.querySelector( 'img' )
-  });
-</script>
-
-<!--<script>
-$(document).ready(function(){
-  $(dev_mode).hide();
-  $("button").click(function(){
-    $(dev_mode).show();
-    alert("Dev mode on.")
-  })
-})
-</script>-->
+    siteTime()
+    </script>
 </body>
 </html>
