@@ -1,0 +1,36 @@
+.menu {
+    position:absolute;
+    left:70%;
+    top:25%;
+    color:white;
+    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+body {
+    background-image: url(/img/1129746.png);
+    background-size: 100%;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.about {
+    position:absolute;
+    left:20%;
+    top:20%;
+    color:white;
+    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+a {
+    color: white
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');

@@ -1,86 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_tw">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Hello world.</title>
+    <title>天哥嘅網頁</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div class="root">
-        <div id="bar1">
-            <details>
-                <summary>
-            <h2><i class="far fa-address-card"></i>About.</h2>
-        </summary>
-        <p>I'm a student in HongKong</p>
-        <p>I start coding this website in 2020/10/30 | Over <span id="sitetime"></span> days.</p>
-        </details>
+    <div class="menu">
+        <form action="" method="get" class="form-example">
+            <div>
+                <h4>目錄 | 記得訂閱天哥頻道</h4>
+                <a href="mctgyt.github.io"><p>Home主頁</p></a>
+                <a href="https://www.buymeacoffee.com/mctgyt">Donate Me贊助我</a>
+                </div>
+        </form>
         </div>
-        <div id="bar2">
-            <details>
-                <summary>
-            <h2><i class="fas fa-envelope-open-text"></i>Contact.</h2>
-        </summary> 
-        <p><i class="fas fa-envelope-open-text"></i>Email:<a href="mailto:mctgyt@aol.com">mctgyt@aol.com</a></p>
-        </details>
-        <div id="bar3">
-        <details>
-            <summary>
-                <h2><i class="fab fa-paypal"></i>Donate.</h2>
-            </summary>
-            <p><i class="fab fa-paypal"></i><a href="https://paypal.me/mctgyt">https://paypal.me/mctgyt</a></p>
-        </details>
+        <div class="about">
+            <h4>大家好我係天哥</h4>
+            <p>來自<del>中國</del>香港嘅小學雞</p>
+</div>
         </div>
-        </div>
-    </div>
-    <div id="center">
-        <center>
-            <h2>Hello World.</h2>
-            <p>Just nobody</p>
-        </center>
-    </div>
-    <style>
-        .root {
-            display: flex;
-            justify-content:space-between;
-            flex-direction: row
-        }
-        body {
-            font-family: 'Ubuntu Mono', monospace;
-        }
-    </style>
-
-<script language=javascript>
-    function siteTime(){
-    window.setTimeout("siteTime()", 1000);
-    var seconds = 1000
-    var minutes = seconds * 60
-    var hours = minutes * 60
-    var days = hours * 24
-    var years = days * 365
-    var today = new Date()
-    var todayYear = today.getFullYear()
-    var todayMonth = today.getMonth()
-    var todayDate = today.getDate()
-    var todayHour = today.getHours()
-    var todayMinute = today.getMinutes()
-    var todaySecond = today.getSeconds()
-    var t1 = Date.UTC(2021,10,30,00,00,00)
-    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
-    var diff = t2-t1
-    var diffYears = Math.floor(diff/years)
-    var diffDays = Math.floor((diff/days)-diffYears*365)
-    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
-    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
-    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
-    document.getElementById("sitetime").innerHTML=(diffYears*365+diffDays)
-    }
-    siteTime()
-    </script>
 </body>
 </html>
