@@ -33,4 +33,20 @@ p,h1,h2,h3,h4,h5,h6 {
     font-family: 'Ubuntu Mono', monospace;
 }
 
+.jump {
+    border-style:solid;
+	border-width:1px;
+    color:white;
+    top: 70%;
+    height: 70%;
+
+}
+
+.grid-item { width: 200px; 
+    color:white;
+    border-style:solid;
+	border-width:1px;
+}
+.grid-item--width2 { width: 400px; }
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
