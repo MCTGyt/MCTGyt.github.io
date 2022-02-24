@@ -1,0 +1,32 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>
+<![CDATA[ 天哥嘅網頁 ]]>
+</title>
+<description>
+<![CDATA[ 天哥嘅網頁 ]]>
+</description>
+<link>http://mctgyt.netlify.app/</link>
+<image>
+<url>http://mctgyt.netlify.app/favicon.ico</url>
+<title>天哥嘅網頁</title>
+<link>http://mctgyt.netlify.app/</link>
+</image>
+<generator>https://rss.app</generator>
+<lastBuildDate>Thu, 24 Feb 2022 05:48:36 GMT</lastBuildDate>
+<atom:link href="https://rss.app/feeds/XGBBCQYyqXxlvmCO.xml" rel="self" type="application/rss+xml"/>
+<language>
+<![CDATA[ en ]]>
+</language>
+<item>
+<title>
+<![CDATA[ I❤IPA | 專注於舊版IOS分享 ]]>
+</title>
+<link>http://mctgyt.netlify.app/store/index.html</link>
+<guid isPermaLink="false">e76ba2c27a19e3b1f94ed68880881c42</guid>
+<dc:creator>
+<![CDATA[ mctgyt.netlify.app ]]>
+</dc:creator>
+</item>
+</channel>
+</rss>
