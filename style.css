@@ -49,4 +49,8 @@ p,h1,h2,h3,h4,h5,h6 {
 }
 .grid-item--width2 { width: 400px; }
 
+@media handheld {
+    background-size:100% 100%;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
