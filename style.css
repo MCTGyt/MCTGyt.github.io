@@ -9,9 +9,11 @@
 }
 
 body {
-    background-image: url(/img/1129746.png);
+    background-image: url(https://www.dmoe.cc/random.php);
     background-size: 100%;
     font-family: 'Ubuntu Mono', monospace;
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
 .about {
@@ -50,7 +52,9 @@ p,h1,h2,h3,h4,h5,h6 {
 .grid-item--width2 { width: 400px; }
 
 @media handheld {
-    background-size:100% 100%;
+    border: 2px solid black; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
